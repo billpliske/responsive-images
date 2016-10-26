@@ -1,4 +1,4 @@
-# ldsn-responsive-images
+# responsive-images
 An approach to using full screen responsive images
 
 ## The Goal
