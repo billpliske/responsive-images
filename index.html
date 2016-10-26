@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>image test</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .image-wrapper {
+            position: relative;
+            width:100%;
+            height: 100vh;
+            overflow:hidden;
+        }
+        .image-wrapper img {
+            position: relative;
+            width: 100%;
+            /* Full screen?
+            /* You need both height and cover */
+            height:100%;
+            object-fit: cover;
+            /* ---------- */
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="image-wrapper">
+            <img src="images/stadium/mobileNew_1080x1920.jpg"
+                 srcset="images/stadium/mobileOld_640x960.jpg 640w, 
+                    images/stadium/mobileNew_1080x1920.jpg 1080w, 
+                    images/stadium/desktop_2200x1600.jpg 2200w" 
+                 sizes="100vw">
+        </div>
+
+</body>
+
+</html>
